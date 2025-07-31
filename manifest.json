@@ -1,7 +1,7 @@
 {
   "name": "Globopedia",
   "short_name": "Globopedia",
-  "start_url": "/",
+  "start_url": "/manifest.json/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#b51200",
