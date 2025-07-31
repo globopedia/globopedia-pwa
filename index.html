@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Globopedia</title>
+  <meta name="theme-color" content="#b51200" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="logo192.png" />
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #fff3f3;
+    }
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #b51200;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Bienvenido a Globopedia!</h1>
+  <p>Puedes agregar esta app a tu pantalla de inicio.</p>
+  <a href="https://www.globopedia.ar/">Entrar a Globopedia</a>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function() {
+        console.log("Service Worker registrado.");
+      });
+    }
+  </script>
+</body>
+</html>
